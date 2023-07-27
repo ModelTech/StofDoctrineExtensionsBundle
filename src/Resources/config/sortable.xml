@@ -15,6 +15,9 @@
             <call method="setAnnotationReader">
                 <argument type="service" id=".stof_doctrine_extensions.reader" on-invalid="ignore" />
             </call>
+            <call method="setForceUseAttributeReader">
+                <argument>%stof_doctrine_extensions.force_use_attribute_reader%</argument>
+            </call>
         </service>
     </services>
 </container>
